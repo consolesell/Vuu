@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+#getLocationBtn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#getLocationBtn:hover {
+    background: #5a6fd8;
+}
+
+#getLocationBtn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#loading {
+    margin: 1rem 0;
+    color: #667eea;
+    font-style: italic;
+}
+
+#locationInfo {
+    margin-top: 2rem;
+    text-align: left;
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#locationInfo p {
+    margin: 0.5rem 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: #dc3545;
+    background: #f8d7da;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+#mapLink {
+    margin-top: 1rem;
+}
+
+#mapLink a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#mapLink a:hover {
+    text-decoration: underline;
+}
