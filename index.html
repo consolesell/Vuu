@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Find Your Location</h1>
+        <button id="getLocationBtn">Get My Location</button>
+        <div id="loading" class="hidden">Getting your location...</div>
+        <div id="locationInfo" class="hidden">
+            <h2>Your Location:</h2>
+            <p><strong>Latitude:</strong> <span id="latitude"></span></p>
+            <p><strong>Longitude:</strong> <span id="longitude"></span></p>
+            <p><strong>Accuracy:</strong> <span id="accuracy"></span> meters</p>
+            <div id="mapLink"></div>
+        </div>
+        <div id="error" class="hidden error"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
